@@ -16,17 +16,13 @@ import art_details from '../data/art_details';
 
 import { NextSeo } from 'next-seo';
 
-const ViewAll = ({ setBgIndex }) => {
+const ViewAll = ({ setBgIndex, currentIndex }) => {
   const router = useRouter();
   const { id } = router.query;
 
   function getRandomIndex(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-
-  const currentIndex = React.useMemo(() => {
-    return art_details.findIndex((art) => art.id === id)
-  }, [id])
 
   React.useEffect(() => {
     setBgIndex(getRandomIndex(1, 2));
@@ -48,7 +44,7 @@ const ViewAll = ({ setBgIndex }) => {
     }
   }
 
-  return art_details[currentIndex] && (
+  return (
     <>
       <NextSeo
         title={`${art_details[currentIndex].title} | Diwanag 2021: Ginháwa`}
@@ -146,6 +142,14 @@ const ViewAll = ({ setBgIndex }) => {
       </Grid>
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const { id } = context.query;
+
+  const currentIndex = art_details.findIndex((art) => art.id === id);
+  // Pass data to the page via props
+  return { props: { currentIndex } }
 }
 
 export default ViewAll;
