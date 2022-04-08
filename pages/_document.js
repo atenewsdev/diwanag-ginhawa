@@ -17,6 +17,7 @@ export default function Document() {
 
         <link rel="preload" href="/art/canisius_hall_1998.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/art/cleaners.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/art/gimik_sa_hardin.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/art/free_time.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/art/march_24_2000.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/art/ngunit_nang_isang_araw_ay_tumunog_ang_beeper_ko.jpg" as="image" type="image/jpeg" />
