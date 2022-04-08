@@ -18,6 +18,12 @@ const art_details = [
     medium: 'Digital Art'
   },
   {
+    id: 'gimik_sa_hardin',
+    title: 'Gimik sa Hardin',
+    artist: 'Gigi Chan',
+    medium: 'Digital Art'
+  },
+  {
     id: 'march_24_2000',
     title: 'March 24, 2000',
     artist: 'Gigi Chan',
