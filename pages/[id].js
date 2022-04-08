@@ -29,7 +29,6 @@ const ViewAll = ({ setBgIndex }) => {
   }, [id])
 
   React.useEffect(() => {
-    console.log(getRandomIndex(1, 2))
     setBgIndex(getRandomIndex(1, 2));
   }, [setBgIndex])
 
@@ -54,6 +53,20 @@ const ViewAll = ({ setBgIndex }) => {
       <NextSeo
         title={`${art_details[currentIndex].title} | Diwanag 2021: Ginháwa`}
         description={`${art_details[currentIndex].medium} by ${art_details[currentIndex].artist}`}
+        openGraph={{
+          images: [
+            {
+              url: `https://ginhawa.atenews.ph/${art_details[currentIndex].id}.jpg`,
+              alt: `${art_details[currentIndex].title}`,
+              type: 'image/jpeg',
+            }
+          ],
+          site_name: `${art_details[currentIndex].title} | Diwanag 2021: Ginháwa`,
+        }}
+        twitter={{
+          handle: '@atenews',
+          cardType: 'summary_large_image',
+        }}
       />
       <Grid
         key={id}

@@ -26,6 +26,20 @@ const Artists = ({ setBgIndex }) => {
       <NextSeo
         title={`Artist List | Diwanag 2021: Ginháwa`}
         description={`Contributors for Diwanag 2021: Ginháwa`}
+        openGraph={{
+          images: [
+            {
+              url: `https://ginhawa.atenews.ph/sample_1.jpg`,
+              alt: `Ode to Last`,
+              type: 'image/jpeg',
+            }
+          ],
+          site_name: `Artist List | Diwanag 2021: Ginháwa`,
+        }}
+        twitter={{
+          handle: '@atenews',
+          cardType: 'summary_large_image',
+        }}
       />
       <Grid
         component={motion.div}

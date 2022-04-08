@@ -14,12 +14,25 @@ import { NextSeo } from 'next-seo';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [bgIndex, setBgIndex] = React.useState(0);
-  console.log(router.asPath)
   return (
     <>
       <NextSeo
         title={`Diwanag 2021: Ginháwa`}
         description={`Diwanag 2021: Ginháwa is the official Art Folio of Atenews for the year 2021.`}
+        openGraph={{
+          images: [
+            {
+              url: `https://ginhawa.atenews.ph/sample_2.jpg`,
+              alt: `Descend to Despair`,
+              type: 'image/jpeg',
+            }
+          ],
+          site_name: `Diwanag 2021: Ginháwa`,
+        }}
+        twitter={{
+          handle: '@atenews',
+          cardType: 'summary_large_image',
+        }}
       />
       <AnimatePresence 
         exitBeforeEnter
