@@ -1,0 +1,28 @@
+body {
+  overflow-x:hidden;
+  margin: 0;
+  padding:0;
+  font-family: 'Montserrat',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Grahamo';
+  src: local('Grahamo'), url(../fonts/Grahamo.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Moonglade';
+  src: local('Moonglade'), url(../fonts/Moonglade.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
