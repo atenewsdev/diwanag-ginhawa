@@ -48,14 +48,14 @@ const Home = ({ setBgIndex }) => {
         <Grid item>
           <Typography style={{ 
             fontFamily: 'Grahamo', 
-            fontSize: '20vw', 
+            fontSize: 'clamp(9.375rem, -10.1563rem + 62.5vw, 25rem)', 
             color: '#430F0F', 
-            lineHeight: '15vw',
+            lineHeight: 'clamp(7.8125rem, -3.9063rem + 37.5vw, 17.1875rem)',
             filter: 'drop-shadow(0 -2px 1rem #DC7676)' 
           }}>
             Ginhawa
           </Typography>
-          <Typography style={{ fontFamily: 'Montserrat', fontSize: '1.5rem' }}>
+          <Typography style={{ fontFamily: 'Montserrat', fontSize: 'clamp(0.75rem, -0.1875rem + 3vw, 1.5rem)' }}>
             DIWANAG 2021
           </Typography>
         </Grid>

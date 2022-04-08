@@ -67,16 +67,17 @@ const ViewAll = ({ setBgIndex }) => {
       >
         <Grid item>
           <img 
-            src={`/art/${art_details[currentIndex].id}.png`}
+            src={`/art/${art_details[currentIndex].id}.jpg`}
             alt={art_details[currentIndex].title}
             style={{
+              border: '5px solid #fff',
               maxHeight: '60vh',
               maxWidth: '90vw'
             }}
           />
         </Grid>
         <Grid item>
-          <Card>
+          <Card style={{ borderRadius: 20 }}>
             <CardContent style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
               <Grid 
                 container

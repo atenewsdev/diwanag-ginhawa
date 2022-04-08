@@ -11,7 +11,7 @@ const Button = (props) => {
         paddingRight: '1.8rem',
         paddingTop: '0.5rem',
         paddingBottom: '0.5rem',
-        borderRadius: 50,
+        borderRadius: 20,
         backgroundColor: 'white',
         color: 'black'
       }}
