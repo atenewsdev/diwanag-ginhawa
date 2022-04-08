@@ -31,6 +31,8 @@ const Artists = ({ setBgIndex }) => {
             {
               url: `https://ginhawa.atenews.ph/sample_1.jpg`,
               alt: `Ode to Last`,
+              width: 1600,
+              height: 1000,
               type: 'image/jpeg',
             }
           ],

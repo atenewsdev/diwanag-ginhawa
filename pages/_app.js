@@ -25,6 +25,8 @@ function MyApp({ Component, pageProps }) {
               url: `https://ginhawa.atenews.ph/sample_2.jpg`,
               alt: `Descend to Despair`,
               type: 'image/jpeg',
+              width: 950,
+              height: 540,
             }
           ],
           site_name: `Diwanag 2021: Ginháwa`,

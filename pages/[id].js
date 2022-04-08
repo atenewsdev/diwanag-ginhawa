@@ -54,6 +54,8 @@ const ViewAll = ({ setBgIndex, currentIndex }) => {
             {
               url: `https://ginhawa.atenews.ph/${art_details[currentIndex].id}.jpg`,
               alt: `${art_details[currentIndex].title}`,
+              width: 800,
+              height: 600,
               type: 'image/jpeg',
             }
           ],
