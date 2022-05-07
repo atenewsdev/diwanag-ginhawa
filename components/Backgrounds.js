@@ -16,7 +16,7 @@ const Backgrounds = ({ bgIndex }) => {
             backgroundPosition: 'center center',
             width: '100vw', 
             height: '100vh',
-            position: 'absolute',
+            position: 'fixed',
             zIndex: -1,
             top: 0,
             left: 0
@@ -36,7 +36,7 @@ const Backgrounds = ({ bgIndex }) => {
             backgroundPosition: 'center center',
             width: '100vw', 
             height: '100vh',
-            position: 'absolute',
+            position: 'fixed',
             zIndex: -1,
             top: 0,
             left: 0
@@ -56,7 +56,7 @@ const Backgrounds = ({ bgIndex }) => {
             backgroundPosition: 'center center',
             width: '100vw', 
             height: '100vh',
-            position: 'absolute',
+            position: 'fixed',
             zIndex: -1,
             top: 0,
             left: 0

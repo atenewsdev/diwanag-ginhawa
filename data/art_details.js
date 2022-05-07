@@ -57,7 +57,7 @@ const art_details = [
     id: 'the_pursuit_of_happiness',
     title: 'The pursuit of happiness',
     artist: 'Hilary Vera Parcon',
-    medium: 'Digital Art '
+    medium: 'Digital Art'
   },
   {
     id: 'the_scenery_of_equanimity',
@@ -77,6 +77,78 @@ const art_details = [
     artist: 'Gigi Chan',
     medium: 'Digital Art'
   },
+  {
+    id: 'Escarda_Down to Earth',
+    title: 'Down to Earth',
+    artist: 'Carlo Escarda',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Guerra_Moment in Silence',
+    title: 'Moment in Silence',
+    artist: 'Marren Guerra',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Lacorte_Descend to Despair',
+    title: 'Descend to Despair',
+    artist: 'Sean Lacorte',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Lacorte_Tag-araw, Gitara, Kalma',
+    title: 'Tag-araw, Gitara, Kalma',
+    artist: 'Sean Lacorte',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Martinez_Head Over the Moon',
+    title: 'Head Over the Moon',
+    artist: 'Ali Martinez',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Martinez_Ode to Last',
+    title: 'Ode to Last',
+    artist: 'Ali Martinez',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Parcon_An Imaginary Unwinding',
+    title: 'An Imaginary Unwinding',
+    artist: 'Harry Parcon',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Parcon_Saudade',
+    title: 'Saudade',
+    artist: 'Harry Parcon',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Salvaleon_Ah... Katahimikan',
+    title: 'Ah... Katahimikan',
+    artist: 'Jake Salvaleon',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Tiu_Lost in Domestication',
+    title: 'Lost in Domestication',
+    artist: 'Rap Tiu',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Tiu_Outside Looking In',
+    title: 'Outside Looking In',
+    artist: 'Rap Tiu',
+    medium: 'Digital Art'
+  },
+  {
+    id: 'Uyking_Oxygen',
+    title: 'Oxygen',
+    artist: 'Katelyn Uyking',
+    medium: 'Digital Art'
+  }
 ]
 
 export default art_details;
