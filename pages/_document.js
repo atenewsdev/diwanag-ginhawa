@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import art_details from '../data/art_details'
 
 export default function Document() {
   return (
@@ -15,19 +16,10 @@ export default function Document() {
         <link rel="preload" href="/painter.png" as="image" type="image/png" />
         <link rel="preload" href="/logo.png" as="image" type="image/png" />
 
-        <link rel="preload" href="/art/canisius_hall_1998.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/cleaners.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/gimik_sa_hardin.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/free_time.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/march_24_2000.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/ngunit_nang_isang_araw_ay_tumunog_ang_beeper_ko.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/of_dust_and_creation.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/old_gymnasium_of_addu.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/the_cost_of_choice.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/the_pursuit_of_happiness.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/the_scenery_of_equanimity.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/waiting.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/art/youre_the_inspiration.jpg" as="image" type="image/jpeg" />
+        { art_details.map((art) => (
+          <link key={art.id} rel="preload" href={`/art/${art.id}.jpg`} as="image" type="image/jpeg" />
+        )) }
+        
       </Head>
       <body>
         <Main />
